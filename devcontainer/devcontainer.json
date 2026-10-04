@@ -1,0 +1,15 @@
+{
+  "name": "Hybrid SAST AI Web Workstation",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "bash devcontainer-setup.sh",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "SAST Web Interface",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
