@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hybrid AI SAST Scanner</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e293b; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); text-align: center; width: 400px; }
+        input[type="file"] { margin: 1.5rem 0; color: #94a3b8; }
+        button { background: #38bdf8; color: #0f172a; font-weight: bold; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; width: 100%; }
+        button:hover { background: #0284c7; color: white; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🛡️ SAST Security Scanner</h2>
+        <p>Upload source code, binary (APK/EXE), or config file to perform an AI-powered security audit.</p>
+        <form action="/scan" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required><br>
+            <button type="submit">Scan & Download PDF Report</button>
+        </form>
+    </div>
+</body>
+</html>
